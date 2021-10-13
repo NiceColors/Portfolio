@@ -34,7 +34,7 @@ const Page404 = () => {
       </Text>
 
       <Box marginY={4}>
-        <Heading textAlign="center">Page not Found.</Heading>
+        <Heading textAlign="center">Page not Found. 😨</Heading>
 
         <Box textAlign="center" marginTop={4}>
           <Text>It&apos;s Okay!</Text>
