@@ -5,7 +5,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)](https://forthebadge.com)
 
 # To do
-- [X] NavBar
+- [X] Navbar
 - [X] Header
 - [X] Hero
 - [X] Footer
