@@ -13,8 +13,7 @@
     "format": "prettier --write src",
     "up-latest": "yarn upgrade-interactive --latest",
     "release": "standard-version",
-    "push-release": "git push --follow-tags origin main",
-    "prepare": "husky install"
+    "push-release": "git push --follow-tags origin main"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.8",
@@ -37,11 +36,6 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^13.2.0",
     "@types/react": "^17.0.24",
-    "commitlint": "^13.2.0",
-    "eslint": "^7.32.0",
-    "eslint-config-next": "^11.1.2",
-    "eslint-config-sznm": "^0.1.7",
-    "lint-staged": "^11.1.2",
     "next-sitemap": "^1.6.168",
     "prettier": "^2.4.1",
     "standard-version": "^9.3.1",
