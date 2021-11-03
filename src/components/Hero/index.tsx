@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import {
   Heading,
   Grid,
@@ -6,14 +7,12 @@ import {
   useColorMode,
   Button,
 } from "@chakra-ui/react";
-
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 
 interface HeroProps {
   avatarUrl: string;
 }
-
 
 export default function Hero({ avatarUrl }: HeroProps) {
   const { colorMode } = useColorMode();
@@ -24,7 +23,7 @@ export default function Hero({ avatarUrl }: HeroProps) {
       <Grid minH="60vh" mt="32" templateColumns="1fr 1fr" position="relative">
         <Box>
           <Text fontSize="1.975rem" fontWeight="normal" color="green.400">
-            Hey, i'm
+            Hey, i&apos;m
           </Text>
           <Heading ml="6" display="flex" fontSize="6rem">
             Victor Batista<Text color="green.400">.</Text>
@@ -54,22 +53,28 @@ export default function Hero({ avatarUrl }: HeroProps) {
             </Text>
             .
           </Text>
-          <Grid mt="24" position="relative">
+          <Grid mt="32" h="50vh" position="relative">
             <Box
               w="480px"
-              h="280px"
+              h="210px"
               border="1px solid #77dd77"
-              bg={colorMode === "light" ? "#fff" : "transparent"}
-            ></Box>
+              // bg={colorMode === "light" ? "#fff" : "transparent"}
+              backgroundImage="./GT-AION.png"
+              backgroundSize="contain"
+              backgroundRepeat="no-repeat"
+            />
             <Box
               w="480px"
-              h="280px"
+              h="230px"
               position="absolute"
               top="140px"
               right="10px"
               border="1px solid #77dd77"
-              bg={colorMode === "light" ? "#fff" : "transparent"}
-            ></Box>
+              // bg={colorMode === "light" ? "#fff" : "transparent"}
+              backgroundImage="./Interfaces.png"
+              backgroundSize="contain"
+              backgroundRepeat="no-repeat"
+            />
           </Grid>
         </Box>
         <Box

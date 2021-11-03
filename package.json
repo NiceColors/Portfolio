@@ -1,8 +1,8 @@
 {
-  "name": "nextarter-chakra",
+  "name": "Portfolio",
   "version": "0.1.0",
   "private": true,
-  "author": "sozonome",
+  "author": "NiceColors",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
