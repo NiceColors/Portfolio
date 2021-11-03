@@ -16,7 +16,7 @@ import * as React from "react";
 
 import createEmotionCache from "styles/createEmotionCache";
 
-const APP_NAME = "nextarter-chakra";
+const APP_NAME = "Nice Colors";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -55,7 +55,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang="pt-br">
         <Head>
           <meta name="application-name" content={APP_NAME} />
           <meta name="apple-mobile-web-app-capable" content="yes" />

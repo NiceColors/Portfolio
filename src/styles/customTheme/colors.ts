@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { DeepPartial, Theme } from "@chakra-ui/react";
 
 /** extend additional color here */

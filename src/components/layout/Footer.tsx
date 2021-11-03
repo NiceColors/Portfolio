@@ -1,14 +1,28 @@
-import { Flex, Link, Text } from "@chakra-ui/react";
+import { Flex, Link, Text, Button, Image } from "@chakra-ui/react";
+import ReactTypingEffect from "react-typing-effect";
 
 const Footer = () => {
+  const repoLink = "https://github.com/NiceColors";
+
   return (
-    <Flex as="footer" width="full" align="center">
+    <Flex
+      as="footer"
+      justifyContent="space-between"
+      width="full"
+      align="center"
+    >
       <Text>
         {new Date().getFullYear()} -{" "}
-        <Link href="https://sznm.dev" isExternal>
-          sznm.dev
+        <Link href="https://github.com/NiceColors" isExternal>
+          <ReactTypingEffect
+            text={["Desenvolvido por Victor Batista do Carmo", ""]}
+            speed={100}
+            eraseDelay={1000}
+            eraseSpeed={50}
+          />
         </Link>
       </Text>
+      
     </Flex>
   );
 };

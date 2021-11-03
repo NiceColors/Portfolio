@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { extendTheme } from "@chakra-ui/react";
 
 import colors from "./colors";

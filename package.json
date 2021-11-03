@@ -23,13 +23,16 @@
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@fontsource/lexend": "^4.5.1",
+    "@types/react-typing-effect": "^2.0.2",
     "framer-motion": "^4.1.17",
     "next": "^11.1.2",
     "next-pwa": "^5.3.1",
     "next-seo": "^4.28.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1"
+    "react-icons": "^4.3.1",
+    "react-typing-effect": "^2.0.5",
+    "scss": "^0.2.4"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^13.2.0",
@@ -38,7 +41,6 @@
     "eslint": "^7.32.0",
     "eslint-config-next": "^11.1.2",
     "eslint-config-sznm": "^0.1.7",
-    "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "next-sitemap": "^1.6.168",
     "prettier": "^2.4.1",
