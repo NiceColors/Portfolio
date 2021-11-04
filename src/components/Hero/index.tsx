@@ -56,11 +56,11 @@ export default function Hero({ avatarUrl }: HeroProps) {
           <Grid mt="32" h="50vh" position="relative">
             <Box
               w="480px"
-              h="210px"
+              h="207px"
               border="1px solid #77dd77"
               // bg={colorMode === "light" ? "#fff" : "transparent"}
               backgroundImage="./GT-AION.png"
-              backgroundSize="contain"
+              backgroundSize="cover"
               backgroundRepeat="no-repeat"
             />
             <Box
@@ -72,7 +72,7 @@ export default function Hero({ avatarUrl }: HeroProps) {
               border="1px solid #77dd77"
               // bg={colorMode === "light" ? "#fff" : "transparent"}
               backgroundImage="./Interfaces.png"
-              backgroundSize="contain"
+              backgroundSize="cover"
               backgroundRepeat="no-repeat"
             />
           </Grid>

@@ -69,12 +69,15 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#FFFFFF" />
 
           {/* add your own app-icon */}
-          {/* <link
+          <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="/icons/apple-touch-icon.png"
+            href="https://img.icons8.com/ios-filled/50/000000/lotus.png"
           />
-          <link rel="shortcut icon" href="/app-icon.png" /> */}
+          <link
+            rel="shortcut icon"
+            href="https://img.icons8.com/ios-filled/50/000000/lotus.png"
+          />
           <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>

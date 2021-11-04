@@ -4,7 +4,7 @@ const defaultSEOConfig = {
   titleTemplate: "%s | Portfolio",
   defaultTitle: "Portfolio",
   description: "Next.js + chakra-ui + TypeScript Portfolio",
-  canonical: "https://nextarter-chakra.sznm.dev",
+  canonical: "",
   openGraph: {
     url: "https://github.com/NiceColors",
     title: "nextarter-chakra",

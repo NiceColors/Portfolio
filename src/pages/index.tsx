@@ -8,8 +8,9 @@ import {
   InferGetStaticPropsType,
 } from "next";
 
-const Hero = dynamic(() => import("../components/Hero"),  { loading: () => <p>...</p> });
-
+const Hero = dynamic(() => import("../components/Hero"), {
+  loading: () => <p>...</p>,
+});
 
 interface dadosProps {
   dados: {
@@ -27,7 +28,6 @@ const Home = ({
     </Box>
   );
 };
-
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   // Call an external API endpoint to get posts.
