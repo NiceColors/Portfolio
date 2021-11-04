@@ -1,6 +1,6 @@
 /** @type {import('next-seo').DefaultSeoProps} */
 const defaultSEOConfig = {
-  title: "Portfolio",
+  title: "Nice Colors",
   titleTemplate: "%s | Portfolio",
   defaultTitle: "Portfolio",
   description: "Next.js + chakra-ui + TypeScript Portfolio",
