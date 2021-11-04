@@ -25,12 +25,15 @@ export default function Hero({ avatarUrl }: HeroProps) {
           <Text fontSize="1.975rem" fontWeight="normal" color="green.400">
             Hey, i&apos;m
           </Text>
-          <Heading ml="6" display="flex" fontSize="6rem">
-            Victor Batista<Text color="green.400">.</Text>
+          <Heading
+            ml="6"
+            fontSize="clamp(2rem, 5vw, 6rem)"
+          >
+            Victor Batista<Text as="span" color="green.400">.</Text>
           </Heading>
 
           <Text
-            fontSize="1.4rem"
+            fontSize="clamp(0.875rem, 2vw, 1.4rem)"
             color={colorMode === "light" ? "gray.600" : "gray.500"}
           >
             I am a
@@ -48,7 +51,6 @@ export default function Hero({ avatarUrl }: HeroProps) {
               color={colorMode === "light" ? "#000" : "#fff"}
               fontWeight="bold"
             >
-              {" "}
               UFRRJ
             </Text>
             .
