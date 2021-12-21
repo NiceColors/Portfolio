@@ -20,16 +20,16 @@ export default function Hero({ avatarUrl }: HeroProps) {
 
   return (
     <>
-      <Grid minH="60vh" mt="32" templateColumns="1fr 1fr" position="relative">
+      <Grid minH="60vh" mt="24" templateColumns="1fr 1fr" position="relative">
         <Box>
           <Text fontSize="1.975rem" fontWeight="normal" color="green.400">
             Hey, i&apos;m
           </Text>
-          <Heading
-            ml="6"
-            fontSize="clamp(2rem, 5vw, 6rem)"
-          >
-            Victor Batista<Text as="span" color="green.400">.</Text>
+          <Heading ml="6" fontSize="clamp(2rem, 5vw, 6rem)">
+            Victor Batista
+            <Text as="span" color="green.400">
+              .
+            </Text>
           </Heading>
 
           <Text
@@ -55,48 +55,59 @@ export default function Hero({ avatarUrl }: HeroProps) {
             </Text>
             .
           </Text>
-          <Grid mt="32" h="50vh" position="relative">
+          <Grid
+            mt="32"
+            h="50vh"
+            position="relative"
+            gridTemplateColumns={{ md: "1fr 1fr", lg: "1fr" }}
+          >
             <Box
-              w="480px"
-              h="207px"
-              border="1px solid #77dd77"
+              w={{ sm: "450px", md: "360px", lg: "440px", xl: "480px" }}
+              h={{ md: "200px", xl: "230px" }}
+              mr="20px"
+              // border="1px solid #77dd77"
               // bg={colorMode === "light" ? "#fff" : "transparent"}
               backgroundImage="./GT-AION.png"
-              backgroundSize="cover"
+              backgroundSize="contain"
+              shadow="lg"
               backgroundRepeat="no-repeat"
             />
             <Box
-              w="480px"
-              h="230px"
-              position="absolute"
+              w={{ sm: "450px", md: "360px", lg: "440px", xl: "480px" }}
+              h={{ md: "200px", xl: "230px" }}
+              mt={{ sm: "2", md: "0", lg: "0", xl: "0" }}
+              position={{ xl: "absolute" }}
               top="140px"
-              right="10px"
-              border="1px solid #77dd77"
+              ml={{ xl: "180px" }}
+              shadow="lg"
+              // border="1px solid #77dd77"
               // bg={colorMode === "light" ? "#fff" : "transparent"}
               backgroundImage="./Interfaces.png"
-              backgroundSize="cover"
+              backgroundSize="contain"
               backgroundRepeat="no-repeat"
             />
           </Grid>
         </Box>
         <Box
-          h="400px"
-          w="400px"
+          h={{ sm:"0", md: "200px", lg: "400px", xl: "500px" }}
+          w={{ sm:"0", md: "200px", lg: "400px", xl: "500px" }}
           borderRadius="50%"
           position="absolute"
           backgroundImage={`url(${avatarUrl})`}
-          right="70"
+          backgroundRepeat={["no-repeat", "no-repeat", "no-repeat"]}
+          backgroundSize="cover"
+          right={{md: "70"}}
         >
           <Button
             as="a"
             position="absolute"
-            bottom="-2"
+            bottom={{sm:"-200px", md:"-2"}}
             colorScheme="green"
-            right="25%"
+            right={{ md: "-5%", lg: "25%", xl: "30%" }}
             href={repoLink}
             target="_blank"
             leftIcon={<AiFillGithub />}
-            size="lg"
+            size={"lg"}
             rounded="10px"
           >
             Open in Github
