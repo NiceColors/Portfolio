@@ -15,7 +15,7 @@ const Footer = () => {
         {new Date().getFullYear()} -{" "}
         <Link href="https://github.com/NiceColors" isExternal>
           <ReactTypingEffect
-            text={["Desenvolvido por Victor Batista do Carmo", ""]}
+            text={["Desenvolvido por Victor Batista", ""]}
             speed={100}
             eraseDelay={1000}
             eraseSpeed={50}

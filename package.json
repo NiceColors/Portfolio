@@ -21,6 +21,8 @@
     "@emotion/styled": "^11.3.0",
     "@fontsource/lexend": "^4.5.1",
     "@types/react-typing-effect": "^2.0.2",
+    "embla-carousel-autoplay": "^6.0.2",
+    "embla-carousel-react": "^6.0.2",
     "framer-motion": "^4.1.17",
     "next": "^11.1.2",
     "next-pwa": "^5.3.1",
