@@ -34,7 +34,12 @@ export default function Hero({ avatarUrl }: HeroProps) {
   });
   return (
     <>
-      <Grid mt="24" minH={{base:"100%", sm:"", lg:"80vh", xl:"110vh"}} templateColumns={{ md: "1fr 1fr" }} position="relative">
+      <Grid
+        mt="24"
+        minH={{ base: "100%", sm: "", lg: "80vh", xl: "110vh" }}
+        templateColumns={{ md: "1fr 1fr" }}
+        position="relative"
+      >
         <Box>
           <Text fontSize="1.975rem" fontWeight="normal" color="green.400">
             Hey, i&apos;m
@@ -69,12 +74,12 @@ export default function Hero({ avatarUrl }: HeroProps) {
             </Text>
             .
           </Text>
-          <Grid mt="32"  gridTemplateColumns={{ md: "1fr 1fr", lg: "1fr" }}>
+          <Grid mt="32" gridTemplateColumns={{ md: "1fr 1fr", lg: "1fr" }}>
             <Box display={variant}>
               <Box position="absolute">
                 <Image
                   maxW={{ md: "0", lg: "400px", xl: "700px" }}
-                  src="https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=https%3A%2F%2Festudando-next-js.vercel.app%2F"
+                  src="./gt-aion.png"
                 />
               </Box>
               <Box
@@ -84,7 +89,7 @@ export default function Hero({ avatarUrl }: HeroProps) {
               >
                 <Image
                   maxW={{ lg: "400px", xl: "700px" }}
-                  src="https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=https%3A%2F%2Fr1.ufrrj.br%2Fseminariopsi%2Fgt-aion%2F2021%2F"
+                  src="./interfaces.png"
                 />
               </Box>
             </Box>
@@ -96,7 +101,7 @@ export default function Hero({ avatarUrl }: HeroProps) {
           borderRadius="50%"
           border="1px solid #77dd77"
           position="absolute"
-          bottom={{md:"100px", lg:"auto"}}
+          bottom={{ md: "100px", lg: "auto" }}
           backgroundImage={`url(${avatarUrl})`}
           backgroundRepeat="no-repeat"
           backgroundSize="cover"
@@ -105,7 +110,7 @@ export default function Hero({ avatarUrl }: HeroProps) {
           <Button
             as="a"
             position="absolute"
-            bottom={{ base:"-200px", sm: "-200px", md: "-2" }}
+            bottom={{ base: "-200px", sm: "-200px", md: "-2" }}
             colorScheme="green"
             right={{ md: "-5%", lg: "25%", xl: "30%" }}
             href={repoLink}

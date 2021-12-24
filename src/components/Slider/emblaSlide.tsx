@@ -24,7 +24,6 @@ export default function EmblaSlide(props: SlideProps) {
   return (
     <>
       <Box className="embla__slide" position="relative" maxW="100%" flex={`0 0 ${props.size}`}>
-
         {props.children}
       </Box>
     </>

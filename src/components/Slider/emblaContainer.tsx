@@ -1,7 +1,11 @@
 import { Flex } from "@chakra-ui/react";
-import React from "react";
+import React, { ReactNode } from "react";
 
-export default function EmblaContainer({children}: any) {
+type SlideProps = {
+  children?: ReactNode;
+};
+
+export default function EmblaContainer({children}: SlideProps) {
   return (
     <>
         <Flex className="embla__container">

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { ReactNode } from "react";
 /* eslint-disable prettier/prettier */
 import Embla from "./embla";
 import EmblaContainer from "./embla";
-import EmblaSlide from "./emblaSlide";
 
-export default function index(props: any) {
+type SlideProps = {
+  children?: ReactNode;
+};
+
+
+export default function index(props: SlideProps) {
   return (
     <>
       <Embla>
