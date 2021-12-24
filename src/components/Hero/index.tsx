@@ -79,7 +79,7 @@ export default function Hero({ avatarUrl }: HeroProps) {
               <Box position="absolute">
                 <Image
                   maxW={{ md: "0", lg: "400px", xl: "700px" }}
-                  src="./gt-aion.png"
+                  src="/img/gt-aion.png"
                 />
               </Box>
               <Box
@@ -89,7 +89,7 @@ export default function Hero({ avatarUrl }: HeroProps) {
               >
                 <Image
                   maxW={{ lg: "400px", xl: "700px" }}
-                  src="./interfaces.png"
+                  src="/img/interfaces.png"
                 />
               </Box>
             </Box>
@@ -126,10 +126,10 @@ export default function Hero({ avatarUrl }: HeroProps) {
       <Embla>
         <EmblaContainer>
           <EmblaSlide size="100%">
-            <Image src="https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=https%3A%2F%2Fr1.ufrrj.br%2Fseminariopsi%2Fgt-aion%2F2021%2F" />
+            <Image src="/img/interfaces.png" />
           </EmblaSlide>
           <EmblaSlide size="100%">
-            <Image src="https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=https%3A%2F%2Festudando-next-js.vercel.app%2F" />
+            <Image src="/img/gt-aion.png" />
           </EmblaSlide>
         </EmblaContainer>
       </Embla>
