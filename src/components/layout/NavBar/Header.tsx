@@ -15,9 +15,9 @@ const Header = () => {
       </Heading>
 
       <Grid ml="auto" templateColumns="repeat(3, auto)" gap="6">
-        <LinkPort href={"/"} name="Sobre mim" />
-        <LinkPort href={"/"} name="Projetos" />
-        <LinkPort href={"/"} name="Tecnologias" />
+        <LinkPort href={"/"} name="About me" />
+        <LinkPort href={"/"} name="Projects" />
+        <LinkPort href={"/"} name="Tecnologies" />
       </Grid>
 
 

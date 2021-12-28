@@ -24,9 +24,7 @@ const SomeImage = () => {
         />
       </MotionBox>
       <Text textAlign="center" fontSize="xs">
-        <Link href="https://stories.freepik.com/web" isExternal>
-          Illustration by Freepik Stories
-        </Link>
+       
       </Text>
 
       <Flex marginY={4} justifyContent="center" alignItems="center">

@@ -7,13 +7,12 @@ const Footer = () => {
   return (
     <Flex
       as="footer"
-      justifyContent="space-between"
       width="full"
       align="center"
     >
       <Text>
         {new Date().getFullYear()} -{" "}
-        <Link href="https://github.com/NiceColors" isExternal>
+        <Link href={repoLink} isExternal>
           <ReactTypingEffect
             text={["Desenvolvido por Victor Batista", ""]}
             speed={100}

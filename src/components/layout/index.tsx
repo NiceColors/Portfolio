@@ -3,7 +3,6 @@ import { ReactNode } from "react";
 
 import Footer from "./Footer";
 import Header from "./NavBar/";
-import Hero from "../Hero";
 
 type LayoutProps = {
   children: ReactNode;
@@ -11,15 +10,21 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <Box margin="0 auto" maxWidth={1520} transition="0.5s ease-out">
-      <Box margin="8">
-        <Header />
-        <Box as="main" minH="80vh">
-          {children}
+    <>
+      <Box
+        margin="0 auto"
+        maxWidth={1580}
+        transition="0.5s ease-out"
+      >
+        <Box margin="8">
+          <Header />
+          <Box as="main" minH="80vh">
+            {children}
+          </Box>
         </Box>
         <Footer />
       </Box>
-    </Box>
+    </>
   );
 };
 

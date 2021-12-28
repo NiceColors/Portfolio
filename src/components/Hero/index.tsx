@@ -7,12 +7,10 @@ import {
   useColorMode,
   Image,
   Button,
-  Flex,
   useBreakpointValue,
 } from "@chakra-ui/react";
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
-import useEmblaCarousel from "embla-carousel-react";
 import Embla from "components/Slider/embla";
 import EmblaContainer from "components/Slider/emblaContainer";
 import EmblaSlide from "components/Slider/emblaSlide";
@@ -24,7 +22,6 @@ interface HeroProps {
 export default function Hero({ avatarUrl }: HeroProps) {
   const { colorMode } = useColorMode();
   const repoLink = "https://github.com/NiceColors";
-  const [emblaRef] = useEmblaCarousel();
   const variant = useBreakpointValue({
     base: "none",
     sm: "none",
@@ -32,6 +29,9 @@ export default function Hero({ avatarUrl }: HeroProps) {
     lg: "block",
     xl: "block",
   });
+
+  const boxImg = useBreakpointValue({ xl: "xl" });
+
   return (
     <>
       <Grid
@@ -39,6 +39,7 @@ export default function Hero({ avatarUrl }: HeroProps) {
         minH={{ base: "100%", sm: "", lg: "80vh", xl: "110vh" }}
         templateColumns={{ md: "1fr 1fr" }}
         position="relative"
+        overflow="none"
       >
         <Box>
           <Text fontSize="1.975rem" fontWeight="normal" color="green.400">
@@ -87,41 +88,79 @@ export default function Hero({ avatarUrl }: HeroProps) {
                 top={{ lg: "400px", xl: "500px" }}
                 left={{ lg: "200px", xl: "400px" }}
               >
-                <Image
-                  maxW={{ lg: "400px", xl: "700px" }}
-                  src="/img/interfaces.png"
-                />
+                {boxImg == "xl" ? (
+                  // <motion.div
+                  //   style={{
+                  //     position: "absolute",
+                  //     left: framerLeft,
+                  //     top: framerTop,
+                  //     width: framerScale,
+                  //     opacity: framerOpacity,
+                  //   }}
+                  //   animate="visible"
+                  // >
+                    <Image
+                      src="/img/interfaces.png"
+                      maxW={{ md: "0", lg: "400px", xl: "700px" }}
+                      // style={{
+                      //   width: framerScale,
+                      // }}
+                    />
+                  // </motion.div>
+                ) : (
+                  <Image
+                    maxW={{ md: "0", lg: "400px", xl: "700px" }}
+                    src="/img/interfaces.png"
+                  />
+                )}
               </Box>
             </Box>
           </Grid>
         </Box>
-        <Box
-          h={{ base: "0", md: "200px", lg: "400px", xl: "450px" }}
-          w={{ base: "0", md: "200px", lg: "400px", xl: "450px" }}
-          borderRadius="50%"
-          border="1px solid #77dd77"
-          position="absolute"
-          bottom={{ md: "100px", lg: "auto" }}
-          backgroundImage={`url(${avatarUrl})`}
-          backgroundRepeat="no-repeat"
-          backgroundSize="cover"
-          right={{ md: "70" }}
-        >
-          <Button
-            as="a"
+
+        {/* <motion.div
+          style={{
+            cursor: "grab",
+          }}
+          drag
+          dragConstraints={{
+            top: -225,
+            right: 20,
+            bottom: 165,
+            left: -525,
+          }}
+          dragElastic={0.4}
+          dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
+          whileTap={{ cursor: "grabbing" }}
+        > */}
+          <Box
+            h={{ base: "0", md: "200px", lg: "400px", xl: "450px" }}
+            w={{ base: "0", md: "200px", lg: "400px", xl: "450px" }}
+            borderRadius="50%"
+            border="1px solid #77dd77"
             position="absolute"
-            bottom={{ base: "-200px", sm: "-200px", md: "-2" }}
-            colorScheme="green"
-            right={{ md: "-5%", lg: "25%", xl: "30%" }}
-            href={repoLink}
-            target="_blank"
-            leftIcon={<AiFillGithub />}
-            size={"lg"}
-            rounded="10px"
+            bottom={{ md: "100px", lg: "auto" }}
+            backgroundImage={`url(${avatarUrl})`}
+            backgroundRepeat="no-repeat"
+            backgroundSize="cover"
+            right={{ md: "70" }}
           >
-            Open in Github
-          </Button>
-        </Box>
+            <Button
+              as="a"
+              position="absolute"
+              bottom={{ base: "-200px", sm: "-200px", md: "-2" }}
+              colorScheme="green"
+              right={{ md: "-5%", lg: "25%", xl: "30%" }}
+              href={repoLink}
+              target="_blank"
+              leftIcon={<AiFillGithub />}
+              size={"lg"}
+              rounded="10px"
+            >
+              Open in Github
+            </Button>
+          </Box>
+        {/* </motion.div> */}
       </Grid>
       <Embla>
         <EmblaContainer>
