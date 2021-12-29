@@ -14,7 +14,7 @@ export default function index() {
 
   return (
     <>
-      <Box>
+      <Box id="projects">
         <Flex
           m="0 auto"
           flexDirection="column"

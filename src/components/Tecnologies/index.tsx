@@ -26,7 +26,7 @@ import { AiFillGithub } from "react-icons/ai";
 export default function index() {
   return (
     <>
-      <Box>
+      <Box id="tecnologies">
         <Flex
           m="0 auto"
           flexDirection="column"

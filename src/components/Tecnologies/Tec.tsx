@@ -11,7 +11,7 @@ export default function Tec({nome, icon}: TecProps) {
     <>
       <Button
         mt={2}
-        w="10vw"
+        minW="10vw"
         h="5vh"
         colorScheme="blue"
         display="flex"
