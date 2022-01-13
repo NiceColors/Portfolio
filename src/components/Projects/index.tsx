@@ -11,6 +11,7 @@ export default function index() {
   // const api = axios.create({
   //   baseURL: "https://api.github.com/nicecolors/repos",
   // });
+  const isHidden = 'hidden';
 
   return (
     <>
@@ -22,8 +23,9 @@ export default function index() {
           alignItems="center"
           justifyContent="center"
           overflow="hidden"
+          
         >
-          <Heading fontSize="clamp(4rem, 5vw, 6rem)">Projects</Heading>
+          <Heading fontSize="clamp(3rem, 5vw, 6rem)">Projects</Heading>
             <BoxImage
               imageUrl="/img/interfaces.png"
               direction="left"
@@ -36,7 +38,6 @@ export default function index() {
               link={""}
 
             />
-
           <BoxImage
             imageUrl="/img/gt-aion.png"
             direction="right"

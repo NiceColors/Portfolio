@@ -33,9 +33,8 @@ export default function index() {
           mt="140px"
           alignItems="center"
           justifyContent="center"
-          overflow="hidden"
         >
-          <Heading fontSize="clamp(4rem, 5vw, 6rem)">Tecnologies</Heading>
+          <Heading fontSize="clamp(3rem, 5vw, 6rem)">Tecnologies</Heading>
           <Box>
             <Text mt={8}>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
@@ -76,11 +75,7 @@ export default function index() {
                 <Tec nome="MongoDB" icon={<SiMongodb />} />
                 <Tec nome="Git" icon={<AiFillGithub />} />
               </Box>
-              <Box mr="3vw">
-                <Heading fontSize="clamp(1rem, 5vw, 2rem)" mt={24}>
-                  Others
-                </Heading>
-              </Box>
+           
             </Flex>
           </Box>
         </Flex>
