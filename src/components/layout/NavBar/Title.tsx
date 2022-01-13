@@ -22,7 +22,7 @@ export default function Title({ name }: TitleProps) {
         left: "230px",
       }}
     >
-      <IconTitle /> <Heading as="h1">{name}</Heading>
+      <IconTitle /> <Heading as="h1" fontSize="2rem">{name}</Heading>
     </Flex>
   );
 }

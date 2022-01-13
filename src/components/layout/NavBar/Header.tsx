@@ -13,7 +13,7 @@ const Header = () => {
       width="full"
       align="center"
     >
-      <Heading as="h1" size="lg" position="relative">
+      <Heading as="span"  position="relative">
         <Link href="/">
           <Title name={"Portfolio"} />
         </Link>

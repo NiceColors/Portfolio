@@ -17,7 +17,7 @@ export default function LinkPort({ name, href }: LinkPortProps) {
         size="sm"
         fontWeight="bold"
         mb={2}
-        color={colorMode === "light" ? "gray.500" : "gray.100"}
+        color={colorMode === "light" ? "gray.700" : "gray.100"}
         className="linkPort links"
       >
         <Link  href={href}>{name}</Link>
