@@ -1,12 +1,10 @@
 import {
-  Box,
-  Button,
   CloseButton,
   Flex,
   Grid,
-  Heading,
   IconButton,
   useBreakpointValue,
+  useColorMode,
   useDisclosure,
 } from "@chakra-ui/react";
 import React from "react";
@@ -17,6 +15,7 @@ import Title from "./Title";
 export default function MobileNav() {
   const mobileNav = useDisclosure();
   const variant = useBreakpointValue({ base: "grid", md: "none" });
+  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
     <>
@@ -24,12 +23,12 @@ export default function MobileNav() {
         <Title name={"Portfolio"} />
         <IconButton
           position={ mobileNav.isOpen ? "fixed": "absolute"}
-          top={ mobileNav.isOpen ? "10": "0"}
-          right="10"
+          top={ mobileNav.isOpen ? "10": "7"}
+          right="12"
           aria-label="toggle menu"
           icon={
             mobileNav.isOpen ? (
-              <CloseButton style={{ zIndex: 20 }} aria-label="Close menu" />
+              <CloseButton style={{ color:"black",zIndex: 20 }} aria-label="Close menu" />
             ) : (
               <AiOutlineMenu size="1.5em" />
             )
@@ -40,7 +39,7 @@ export default function MobileNav() {
             color: "",
           }}
           onClick={mobileNav.isOpen ? mobileNav.onClose : mobileNav.onOpen}
-          zIndex="999999999"
+          zIndex="4"
         />
       </Flex>
 
@@ -53,15 +52,16 @@ export default function MobileNav() {
           minH="20vh"
           px="10"
           py="10"
-          bg="rgba(255,255, 250, 0.95)"
+          bg={colorMode === "light" ? "rgba(255,255, 250)" : "gray.800"}
+          opacity="0.99"
           boxShadow="md"
           placeContent="center"
           gap="20px"
-          zIndex="99999999"
+          zIndex="3"
         >
           <LinkPort href={"/"} name="Sobre mim" />
-          <LinkPort href={"/"} name="Projetos" />
-          <LinkPort href={"/"} name="Tecnologias" />
+          <LinkPort href={"#projects"} name="Projetos" />
+          <LinkPort href={"#tecnologies"} name="Tecnologias" />
 
 
         </Grid>

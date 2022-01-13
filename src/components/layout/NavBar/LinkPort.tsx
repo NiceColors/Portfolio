@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Heading } from "@chakra-ui/react";
+import { Heading, useColorMode } from "@chakra-ui/react";
 
 interface LinkPortProps {
   name: string;
@@ -8,6 +8,8 @@ interface LinkPortProps {
 }
 
 export default function LinkPort({ name, href }: LinkPortProps) {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <>
       <Heading
@@ -15,6 +17,7 @@ export default function LinkPort({ name, href }: LinkPortProps) {
         size="sm"
         fontWeight="bold"
         mb={2}
+        color={colorMode === "light" ? "gray.500" : "gray.100"}
         className="linkPort links"
       >
         <Link  href={href}>{name}</Link>
