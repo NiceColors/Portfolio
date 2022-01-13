@@ -11,7 +11,7 @@
 - [X] Footer
 - [x] Projetos
 - [x] Tecnologias
-- [/] Responsividade
+- [x] Responsividade
 
 
 # Made with:
