@@ -21,9 +21,7 @@ export default function index() {
           flexDirection="column"
           mt="140px"
           alignItems="center"
-          justifyContent="center"
-          overflow="hidden"
-          
+          justifyContent="center"          
         >
           <Heading fontSize="clamp(3rem, 5vw, 6rem)">Projects</Heading>
             <BoxImage

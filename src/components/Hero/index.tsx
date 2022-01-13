@@ -62,9 +62,10 @@ export default function Hero({ avatarUrl }: HeroProps) {
               color={colorMode === "light" ? "#000" : "#fff"}
               fontWeight="bold"
             >
+              {" "}
               student
-            </Text>
-            of Information systems at
+            </Text>{" "}
+            of Information systems at{" "}
             <Text
               as="span"
               color={colorMode === "light" ? "#000" : "#fff"}
@@ -98,15 +99,15 @@ export default function Hero({ avatarUrl }: HeroProps) {
                   //   }}
                   //   animate="visible"
                   // >
-                  <Image
-                    src="/img/interfaces.png"
-                    maxW={{ md: "0", lg: "400px", xl: "700px" }}
-                    // style={{
-                    //   width: framerScale,
-                    // }}
-                  />
-                ) : (
+                    <Image
+                      src="/img/interfaces.png"
+                      maxW={{ md: "0", lg: "400px", xl: "700px" }}
+                      // style={{
+                      //   width: framerScale,
+                      // }}
+                    />
                   // </motion.div>
+                ) : (
                   <Image
                     maxW={{ md: "0", lg: "400px", xl: "700px" }}
                     src="/img/interfaces.png"
@@ -132,33 +133,33 @@ export default function Hero({ avatarUrl }: HeroProps) {
           dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
           whileTap={{ cursor: "grabbing" }}
         > */}
-        <Box
-          h={{ base: "0", md: "200px", lg: "400px", xl: "450px" }}
-          w={{ base: "0", md: "200px", lg: "400px", xl: "450px" }}
-          borderRadius="50%"
-          border="1px solid #77dd77"
-          position="absolute"
-          bottom={{ md: "100px", lg: "auto" }}
-          backgroundImage={`url(${avatarUrl})`}
-          backgroundRepeat="no-repeat"
-          backgroundSize="cover"
-          right={{ md: "70" }}
-        >
-          <Button
-            as="a"
+          <Box
+            h={{ base: "0", md: "200px", lg: "400px", xl: "450px" }}
+            w={{ base: "0", md: "200px", lg: "400px", xl: "450px" }}
+            borderRadius="50%"
+            border="1px solid #77dd77"
             position="absolute"
-            bottom={{ base: "-200px", sm: "-200px", md: "-2" }}
-            colorScheme="green"
-            right={{ md: "-5%", lg: "25%", xl: "30%" }}
-            href={repoLink}
-            target="_blank"
-            leftIcon={<AiFillGithub />}
-            size={"lg"}
-            rounded="10px"
+            bottom={{ md: "100px", lg: "auto" }}
+            backgroundImage={`url(${avatarUrl})`}
+            backgroundRepeat="no-repeat"
+            backgroundSize="cover"
+            right={{ md: "70" }}
           >
-            Open in Github
-          </Button>
-        </Box>
+            <Button
+              as="a"
+              position="absolute"
+              bottom={{ base: "-200px", sm: "-200px", md: "-2" }}
+              colorScheme="green"
+              right={{ md: "-5%", lg: "25%", xl: "30%" }}
+              href={repoLink}
+              target="_blank"
+              leftIcon={<AiFillGithub />}
+              size={"lg"}
+              rounded="10px"
+            >
+              Open in Github
+            </Button>
+          </Box>
         {/* </motion.div> */}
       </Grid>
       <Embla>
