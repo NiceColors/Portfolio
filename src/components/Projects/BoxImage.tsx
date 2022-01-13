@@ -88,13 +88,13 @@ export default function BoxImage({
           </Box>
         ) : (
           <Box>
-            <Image position="relative" maxW="900px" src={imageUrl} />
+            <Image position="relative" src={imageUrl} />
             <Box
-              minH="180px"
+              minH="120px"
               position="relative"
-              bottom="50px"
-              maxW="768px"
-              left="67px"
+              bottom="80px"
+              w="87%"
+              margin="0 auto"
               boxShadow="lg"
               bgColor={useColorModeValue("white", "gray.800")}
               border="1px solid #77dd77"
