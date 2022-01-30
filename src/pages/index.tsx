@@ -7,9 +7,6 @@ import {
   InferGetServerSidePropsType,
 } from "next";
 
-import Projects from "components/Projects";
-import Tecnologies from "components/Tecnologies";
-
 
 
 interface dadosProps {
@@ -25,8 +22,6 @@ const Home = ({
   return (
     <Box mb={8} w="full" >
       <Hero avatarUrl={dados.avatar_url} />
-      <Projects />
-      <Tecnologies />
     </Box>
   );
 };

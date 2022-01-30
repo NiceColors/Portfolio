@@ -11,8 +11,7 @@ export default function index() {
   // const api = axios.create({
   //   baseURL: "https://api.github.com/nicecolors/repos",
   // });
-  const isHidden = 'hidden';
-
+  
   return (
     <>
       <Box id="projects">
@@ -27,12 +26,10 @@ export default function index() {
             <BoxImage
               imageUrl="/img/interfaces.png"
               direction="left"
-              firstBadge={"TypeScript"}
-              secondBadge={"NextJS"}
+              firstBadge={'TypeScript'}
+              secondBadge={'NextJS'}
               title={"XVI Interfaces"}
-              description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut molestie enim. Nam efficitur"
-              }
+              description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut molestie enim. Nam efficitur"}
               link={""}
 
             />

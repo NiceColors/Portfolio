@@ -18,7 +18,7 @@ export default function Title({ name }: TitleProps) {
         height: "37px",
         background: colorMode === "light" ? "gray.800" : "gray.200",
         position: "absolute",
-        top:{ base: "8", md: "0" },
+        top:{ base: "0", md: "0" },
         left: "230px",
       }}
     >

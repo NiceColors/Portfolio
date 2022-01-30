@@ -40,6 +40,7 @@ export default function Hero({ avatarUrl }: HeroProps) {
         templateColumns={{ md: "1fr 1fr" }}
         position="relative"
         overflow="none"
+        
       >
         <Box>
           <Text fontSize="1.975rem" fontWeight="normal" color="green.400">

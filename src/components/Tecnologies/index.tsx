@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import {
   DiJavascript,
@@ -22,6 +22,7 @@ import {
 } from "react-icons/si";
 import Tec from "./Tec";
 import { AiFillGithub } from "react-icons/ai";
+import Github from "./Github";
 
 export default function index() {
   return (
@@ -42,10 +43,7 @@ export default function index() {
               voluptates perspiciatis, sequi iste corrupti nihil quasi aliquam
               cumque quam explicabo minima quod. fuga earum commodi error?
               Voluptas ipsa molestias voluptates perspiciatis, sequi iste
-              corrupti nihil quasi aliquam cumque quam explicabo minima quod.
-              fuga earum commodi error? Voluptas ipsa molestias voluptates
-              perspiciatis, sequi iste corrupti nihil quasi aliquam cumque quam
-              explicabo minima quod.
+              corrupti nihil
             </Text>
             <Flex>
               <Box mr="3vw">
@@ -57,10 +55,8 @@ export default function index() {
                 <Tec nome="JavaScript" icon={<DiJavascript />} />
                 <Tec nome="React" icon={<DiReact />} />
                 <Tec nome="ChakraUI" icon={<SiChakraui />} />
-                <Tec nome="Laravel" icon={<SiLaravel />} />
-                <Tec nome="Wordpress" icon={<SiWordpress />} />
                 <Tec nome="Sass" icon={<DiSass />} />
-                <Tec nome="Figma" icon={<CgFigma />} />
+                <Tec nome="Wordpress" icon={<SiWordpress />} />
               </Box>
 
               <Box mr="3vw">
@@ -69,16 +65,31 @@ export default function index() {
                 </Heading>
                 <Tec nome="NodeJS" icon={<DiNodejsSmall />} />
                 <Tec nome="PHP" icon={<DiPhp />} />
-                <Tec nome="NestJS" icon={<SiNestjs />} />
-                <Tec nome="Flask" icon={<SiFlask />} />
                 <Tec nome="MySQL" icon={<SiMysql />} />
                 <Tec nome="MongoDB" icon={<SiMongodb />} />
-                <Tec nome="Git" icon={<AiFillGithub />} />
               </Box>
-           
+              <Box mr="3vw">
+                <Heading fontSize="clamp(1rem, 5vw, 2rem)" mt={24}>
+                  Tools
+                </Heading>
+                <Tec nome="Git" icon={<AiFillGithub />} />
+                <Tec nome="Figma" icon={<CgFigma />} />
+              </Box>
             </Flex>
           </Box>
         </Flex>
+        <Stack>
+          <Heading mb={8} mt={24} fontWeight={400}>
+            <a href="https://github.com/NiceColors">
+              GitHub{" "}
+              <Text as="span" color="green.400">
+                Code
+              </Text>{" "}
+              Stats
+            </a>
+          </Heading>
+          <Github />
+        </Stack>
       </Box>
     </>
   );

@@ -5,6 +5,7 @@ import {
   IconButton,
   useBreakpointValue,
   useColorMode,
+  useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
 import React from "react";
@@ -20,15 +21,23 @@ export default function MobileNav() {
   return (
     <>
       <Flex display={{ md: "none" }}>
-        <Title name={"Portfolio"} />
+        <Flex transform="translateY(60%)">
+          <Title name={"Portfolio"} />
+        </Flex>
         <IconButton
-          position={ mobileNav.isOpen ? "fixed": "absolute"}
-          top={ mobileNav.isOpen ? "10": "7"}
-          right="12"
+          position={mobileNav.isOpen ? "fixed" : "absolute"}
+          top={mobileNav.isOpen ? "10" : "7"}
+          right="8"
           aria-label="toggle menu"
           icon={
             mobileNav.isOpen ? (
-              <CloseButton style={{ color:"black",zIndex: 20 }} aria-label="Close menu" />
+              <CloseButton
+                style={{
+                  color: useColorModeValue("black", "white"),
+                  zIndex: 20,
+                }}
+                aria-label="Close menu"
+              />
             ) : (
               <AiOutlineMenu size="1.5em" />
             )
@@ -45,7 +54,7 @@ export default function MobileNav() {
 
       {mobileNav.isOpen && (
         <Grid
-          minW="90%"
+          minW="95%"
           position={"fixed"}
           top="8"
           display={variant}
@@ -60,10 +69,8 @@ export default function MobileNav() {
           zIndex="3"
         >
           <LinkPort href={"/"} name="Sobre mim" />
-          <LinkPort href={"#projects"} name="Projetos" />
-          <LinkPort href={"#tecnologies"} name="Tecnologias" />
-
-
+          <LinkPort href={"projects"} name="Projetos" />
+          <LinkPort href={"tecnologies"} name="Tecnologias" />
         </Grid>
       )}
     </>
