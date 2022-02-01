@@ -17,6 +17,8 @@ export default function index() {
     <>
       <Stack
         m="0 auto"
+        border="1px solid gray"
+        boxShadow={`0px 0px 10px rgba(0, 0, 0, 0.1)`}
         bgColor="white"
         minH="150vh"
         maxW="50vw"
