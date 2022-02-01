@@ -26,9 +26,11 @@ const Header = () => {
       display={{ base: "none", md: "flex" }}
       position="fixed"
       top="0px"
-      minH="8vh"
+      h="8vh"
       className={isScroll ? "header-scroll" : "header-scroll-none"}
-      backgroundColor={isScroll ? useColorModeValue("gray.100", "green.600") : ""}
+      backgroundColor={
+        isScroll ? useColorModeValue("gray.100", "green.600") : ""
+      }
       w="full"
       transition="all 0.7s ease-out"
     >
