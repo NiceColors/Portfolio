@@ -102,7 +102,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(93, 201, 79, 0.959);
+  background: rgba(175, 175, 175, 0.959);
   border-radius: 12px;
 }
 
@@ -112,5 +112,5 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a5e07;
+  background: #242924;
 }

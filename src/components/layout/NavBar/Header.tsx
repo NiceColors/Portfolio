@@ -29,7 +29,7 @@ const Header = () => {
       h="8vh"
       className={isScroll ? "header-scroll" : "header-scroll-none"}
       backgroundColor={
-        isScroll ? useColorModeValue("gray.100", "green.600") : ""
+        isScroll ? useColorModeValue("gray.100", "gray.600") : ""
       }
       w="full"
       transition="all 0.7s ease-out"
