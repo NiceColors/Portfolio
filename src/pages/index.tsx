@@ -2,12 +2,8 @@ import { Box, Image } from "@chakra-ui/react";
 import Hero from "../components/Hero";
 // import dynamic from "next/dynamic";
 
-import {
-  GetServerSideProps,
-  InferGetServerSidePropsType,
-} from "next";
-
-
+import { GetServerSideProps, InferGetServerSidePropsType } from "next";
+import AboutMe from "components/AboutMe";
 
 interface dadosProps {
   dados: {
@@ -20,8 +16,9 @@ const Home = ({
   dados,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
-    <Box mb={8} w="full" >
+    <Box mb={8} w="full">
       <Hero avatarUrl={dados.avatar_url} />
+      <AboutMe />
     </Box>
   );
 };

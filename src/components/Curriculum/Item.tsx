@@ -1,4 +1,11 @@
-import { HStack, Text, Heading, Box, Stack } from "@chakra-ui/react";
+import {
+  HStack,
+  Text,
+  Heading,
+  Box,
+  Stack,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import React from "react";
 import Dots from "./Dots";
 
@@ -14,7 +21,7 @@ export default function Item(ItemProps: ItemProps) {
       <HStack>
         <Heading
           mt={8}
-          color="gray.700"
+          color={useColorModeValue("gray.700", "white")}
           fontSize="2rem"
           position="relative"
           whiteSpace="nowrap"
@@ -25,13 +32,13 @@ export default function Item(ItemProps: ItemProps) {
           {ItemProps.title.substring(3, ItemProps.title.length)}
         </Heading>
         <Box
-          h="2px"
+          h="1px"
           position="relative"
           width="full"
           left="0"
           top="25px"
           overflow="hidden"
-          bgColor="gray.600"
+          bgColor="gray.400"
           ml="10px"
         />
       </HStack>

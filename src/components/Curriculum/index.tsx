@@ -53,10 +53,10 @@ export default function index() {
             charge="Developer"
           />
           <UnorderedList>
-            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit"/>
-            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit"/>
-            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit"/>
-
+            
+            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit" />
+            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit" />
+            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit" />
           </UnorderedList>
         </Item>
         <Item title="Projects">
@@ -66,9 +66,9 @@ export default function index() {
             charge="Developer"
           />
           <UnorderedList>
-            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit"/>
-            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit"/>
-            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit"/>
+            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit" />
+            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit" />
+            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit" />
           </UnorderedList>
           <Company
             title="Lorem Ipsum"
@@ -76,9 +76,9 @@ export default function index() {
             charge="Developer"
           />
           <UnorderedList>
-            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit"/>
-            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit"/>
-            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit"/>
+            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit" />
+            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit" />
+            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit" />
           </UnorderedList>
         </Item>
         <Item title="Education">
@@ -89,13 +89,10 @@ export default function index() {
             charge="Developer lorem ipsum"
           />
           <UnorderedList>
-            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit"/>
-
+            <Dots text="Lorem Ipsum dolor sit amet, consectetur adipiscing elit" />
           </UnorderedList>
         </Item>
-        <Item title="Tecnologies and Tools">
-        
-        </Item>
+        <Item title="Tecnologies and Tools"></Item>
       </Stack>
     </>
   );
