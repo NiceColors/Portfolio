@@ -39,7 +39,7 @@ export default function Company(companyProps: CompanyProps) {
           </Text>
         </HStack>
         <HStack w="100%" justifyContent="space-between">
-          <Text color="gray.800">{companyProps.charge}</Text>
+          <Text color={useColorModeValue("gray.600", "white")}>{companyProps.charge}</Text>
           <Text
             fontWeight={300}
             as="i"
