@@ -14,6 +14,7 @@ import { AiFillGithub } from "react-icons/ai";
 import Embla from "components/Slider/embla";
 import EmblaContainer from "components/Slider/emblaContainer";
 import EmblaSlide from "components/Slider/emblaSlide";
+import { ArrowRightIcon } from "@chakra-ui/icons";
 
 interface HeroProps {
   avatarUrl: string;
@@ -40,7 +41,6 @@ export default function Hero({ avatarUrl }: HeroProps) {
         templateColumns={{ md: "1fr 1fr" }}
         position="relative"
         overflow="none"
-        
       >
         <Box>
           <Text fontSize="1.975rem" fontWeight="normal" color="green.400">
@@ -76,18 +76,21 @@ export default function Hero({ avatarUrl }: HeroProps) {
             </Text>
             .
           </Text>
-          <Grid mt="32" gridTemplateColumns={{ md: "1fr 1fr", lg: "1fr" }}>
+          <Grid
+            mt={{ base: 32, lg: 8 }}
+            gridTemplateColumns={{ md: "1fr 1fr", lg: "1fr" }}
+          >
             <Box display={variant}>
               <Box position="absolute">
                 <Image
-                  maxW={{ md: "0", lg: "400px", xl: "700px" }}
+                  maxW={{ md: "0", lg: "400px", xl: "550px" }}
                   src="/img/gt-aion.png"
                 />
               </Box>
               <Box
                 position="absolute"
-                top={{ lg: "400px", xl: "500px" }}
-                left={{ lg: "200px", xl: "400px" }}
+                top={{ lg: "260px", xl: "350px" }}
+                left={{ lg: "200px", xl: "300px" }}
               >
                 {boxImg == "xl" ? (
                   // <motion.div
@@ -100,15 +103,15 @@ export default function Hero({ avatarUrl }: HeroProps) {
                   //   }}
                   //   animate="visible"
                   // >
-                    <Image
-                      src="/img/interfaces.png"
-                      maxW={{ md: "0", lg: "400px", xl: "700px" }}
-                      // style={{
-                      //   width: framerScale,
-                      // }}
-                    />
-                  // </motion.div>
+                  <Image
+                    src="/img/interfaces.png"
+                    maxW={{ md: "0", lg: "400px", xl: "550px" }}
+                    // style={{
+                    //   width: framerScale,
+                    // }}
+                  />
                 ) : (
+                  // </motion.div>
                   <Image
                     maxW={{ md: "0", lg: "400px", xl: "700px" }}
                     src="/img/interfaces.png"
@@ -134,33 +137,33 @@ export default function Hero({ avatarUrl }: HeroProps) {
           dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
           whileTap={{ cursor: "grabbing" }}
         > */}
-          <Box
-            h={{ base: "0", md: "200px", lg: "400px", xl: "450px" }}
-            w={{ base: "0", md: "200px", lg: "400px", xl: "450px" }}
-            borderRadius="50%"
-            border="1px solid #77dd77"
+        <Box
+          h={{ base: "0", md: "200px", lg: "300px", xl: "450px" }}
+          w={{ base: "0", md: "200px", lg: "300px", xl: "450px" }}
+          borderRadius="50%"
+          border="1px solid #77dd77"
+          position="absolute"
+          bottom={{ md: "100px", lg: "auto" }}
+          backgroundImage={`url(${avatarUrl})`}
+          backgroundRepeat="no-repeat"
+          backgroundSize="cover"
+          right={{ md: "70" }}
+        >
+          <Button
+            as="a"
             position="absolute"
-            bottom={{ md: "100px", lg: "auto" }}
-            backgroundImage={`url(${avatarUrl})`}
-            backgroundRepeat="no-repeat"
-            backgroundSize="cover"
-            right={{ md: "70" }}
+            bottom={{ base: "-200px", sm: "-200px", md: "-2" }}
+            colorScheme="green"
+            right={{ md: "-5%", lg: "15%", xl: "30%" }}
+            href={repoLink}
+            target="_blank"
+            leftIcon={<AiFillGithub />}
+            size={"lg"}
+            rounded="10px"
           >
-            <Button
-              as="a"
-              position="absolute"
-              bottom={{ base: "-200px", sm: "-200px", md: "-2" }}
-              colorScheme="green"
-              right={{ md: "-5%", lg: "25%", xl: "30%" }}
-              href={repoLink}
-              target="_blank"
-              leftIcon={<AiFillGithub />}
-              size={"lg"}
-              rounded="10px"
-            >
-              Open in Github
-            </Button>
-          </Box>
+            Open in Github
+          </Button>
+        </Box>
         {/* </motion.div> */}
       </Grid>
       <Embla>
@@ -173,6 +176,7 @@ export default function Hero({ avatarUrl }: HeroProps) {
           </EmblaSlide>
         </EmblaContainer>
       </Embla>
+      
     </>
   );
 }

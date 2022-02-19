@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
+import { RiBarChartHorizontalLine } from "react-icons/ri";
 import LinkPort from "./LinkPort";
 import Title from "./Title";
 
@@ -27,6 +28,8 @@ export default function MobileNav() {
         <IconButton
           position={mobileNav.isOpen ? "fixed" : "absolute"}
           top={mobileNav.isOpen ? "10" : "7"}
+          borderRadius="0"
+          boxShadow='lg'
           right="8"
           aria-label="toggle menu"
           icon={
@@ -39,7 +42,7 @@ export default function MobileNav() {
                 aria-label="Close menu"
               />
             ) : (
-              <AiOutlineMenu size="1.5em" />
+              <RiBarChartHorizontalLine size="1.5em" />
             )
           }
           bg="transparent"

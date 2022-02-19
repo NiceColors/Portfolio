@@ -24,19 +24,24 @@ import Item from "../Curriculum/Item";
 function index() {
   return (
     <>
-      <Box minH="100vh" mt={32} position={"relative"}>
+      <Box minH="100vh" position={"relative"}>
         <Box as="header" mb={12}>
           <Image
             borderRadius="100%"
             w="200px"
             transform="translateX(-10%)"
-            mb={{base:4, md:12}}
+            mb={{ base: 4, md: 12 }}
             src="https://avatars.githubusercontent.com/u/54453426?v=4"
           />
-          <Flex justifyContent="space-between" w="100%" flexDirection={{base:"column", md:"inherit"}}>
+          <Flex
+            justifyContent="space-between"
+            w="100%"
+            flexDirection={{ base: "column", md: "inherit" }}
+          >
             <Box>
-              <Text fontSize="clamp(2rem, 5vw, 4rem)">Victor Batista,</Text>
-              <Text fontSize="clamp(2rem, 5vw, 4rem)">Front-End developer</Text>
+              <Text fontSize="clamp(2rem, 5vw, 4rem)" >
+                Victor Batista, <br /> Front-End developer
+              </Text>
               <Switch colorScheme="green" isChecked={true} /> Available
             </Box>
 
@@ -52,10 +57,14 @@ function index() {
                   <AiFillGithub size="35px" />
                 </Link>
                 <Link href="#">
-                  <AiOutlineTwitter color="white" style={{
-                      borderRadius: '100%',
-                      backgroundColor:"#1a202c"
-                  }} size="35px" />
+                  <AiOutlineTwitter
+                    color="white"
+                    style={{
+                      borderRadius: "100%",
+                      backgroundColor: "#1a202c",
+                    }}
+                    size="35px"
+                  />
                 </Link>
               </Flex>
             </Box>
