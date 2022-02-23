@@ -10,8 +10,8 @@
 - [X] Hero
 - [X] Footer
 - [x] Projetos
-- [x] Tecnologias
-- [x] Responsividade
+- [] Tecnologias
+- [] Responsividade
 
 
 # Made with:
