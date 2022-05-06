@@ -9,7 +9,7 @@
 - [X] Header
 - [X] Hero
 - [X] Footer
-- [x] Projetos
+- [ ] Projetos
 - [ ] Tecnologias
 - [ ] Responsividade
 
