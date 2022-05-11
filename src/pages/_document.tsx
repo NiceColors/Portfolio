@@ -23,14 +23,14 @@ class MyDocument extends Document {
     ctx.renderPage = () =>
       originalRenderPage({
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        enhanceApp: (App: any) => (props) =>
+        enhanceApp: (App: any) => (props: unknown) =>
           <App emotionCache={cache} {...props} />,
       });
 
     const initialProps = await Document.getInitialProps(ctx);
 
     const emotionStyles = extractCriticalToChunks(initialProps.html);
-    const emotionStyleTags = emotionStyles.styles.map((style) => (
+    const emotionStyleTags = emotionStyles.styles.map((style: { key: any; ids: any[]; css: any; }) => (
       <style
         data-emotion={`${style.key} ${style.ids.join(" ")}`}
         key={style.key}

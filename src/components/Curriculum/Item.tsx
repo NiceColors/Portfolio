@@ -37,7 +37,6 @@ export default function Item(ItemProps: ItemProps) {
           width="full"
           left="0"
           top="25px"
-          overflow="hidden"
           bgColor="gray.400"
           ml="10px"
         />

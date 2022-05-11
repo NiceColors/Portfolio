@@ -16,7 +16,6 @@ const Layout = ({ children }: LayoutProps) => {
         margin="0 auto"
         mt={24}
         maxWidth={1580}
-        overflow="hidden"
         transition="0.5s ease-out"
       >
         <Box margin="8">

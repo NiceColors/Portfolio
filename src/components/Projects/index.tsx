@@ -20,7 +20,8 @@ export default function index() {
           flexDirection="column"
           mt="140px"
           alignItems="center"
-          justifyContent="center"          
+          justifyContent="center"
+          overflow={'hidden'}          
         >
           <Heading fontSize="clamp(3rem, 5vw, 6rem)">Projects</Heading>
             <BoxImage

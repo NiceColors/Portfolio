@@ -29,7 +29,6 @@ export default function MobileNav() {
           position={mobileNav.isOpen ? "fixed" : "absolute"}
           top={mobileNav.isOpen ? "10" : "7"}
           borderRadius="0"
-          boxShadow='lg'
           right="8"
           aria-label="toggle menu"
           icon={
@@ -64,7 +63,7 @@ export default function MobileNav() {
           minH="20vh"
           px="10"
           py="10"
-          bg={colorMode === "light" ? "rgba(255,255, 250)" : "gray.800"}
+          bg={colorMode === "light" ? "#f4f4f4" : "gray.800"}
           opacity="0.99"
           boxShadow="md"
           placeContent="center"

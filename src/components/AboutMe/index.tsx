@@ -24,7 +24,7 @@ import Item from "../Curriculum/Item";
 function index() {
   return (
     <>
-      <Box minH="100vh" position={"relative"}>
+      <Box minH="100vh" mt={16} position={"relative"}>
         <Box as="header" mb={12}>
           <Image
             borderRadius="100%"
@@ -39,7 +39,7 @@ function index() {
             flexDirection={{ base: "column", md: "inherit" }}
           >
             <Box>
-              <Text fontSize="clamp(2rem, 5vw, 4rem)" >
+              <Text fontSize="clamp(2rem, 5vw, 4rem)">
                 Victor Batista, <br /> Front-End developer
               </Text>
               <Switch colorScheme="green" isChecked={true} /> Available
@@ -72,16 +72,15 @@ function index() {
         </Box>
         <Divider />
         <Text mt={12} fontWeight="light">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-          repudiandae similique numquam beatae et quos, sequi adipisci, minima
-          voluptas deserunt, id corrupti eius omnis cum cumque quod nihil! Odit,
-          ex! repudiandae similique numquam beatae et quos, sequi adipisci,
-          minima voluptas deserunt, id corrupti eius omnis cum cumque quod
-          nihil! Odit repudiandae similique numquam beatae et quos, sequi
-          adipisci, minima voluptas deserunt, id corrupti eius omnis cum cumque
-          quod nihil! Odit, ex! repudiandae similique numquam beatae et quos,
-          sequi adipisci, minima voluptas deserunt, id corrupti eius omnis cum
-          cumque quod nihil! Odit, ex!
+          Desenvolvedor Front-end com experiência na construção de aplicações
+          Web com JavaScript / Reactjs / Nodejs e algumas outras bibliotecas e
+          frameworks interessantes. Atualmente sou graduando em Sistemas de
+          Informações pela UFRRJ e atuo como bolsista do Laboratório de
+          Psicologia e Informações Afro-Descendentes da UFRRJ e como tutor do
+          projeto de extensão StoryGirl com o intuito de apresentar conceitos da
+          programação de computadores para crianças e jovens. Também adoro
+          participar de comunidades, ajudar e apoiar organizações para promover
+          a diversidade na tecnologia.
         </Text>
 
         <Box as="header" mt={12}>
@@ -89,13 +88,12 @@ function index() {
           <Box>
             <Company
               page="index"
-              title="Lorem Ipsum 📖⌨️"
+              title="LAPSIAFRO 📖⌨️"
               date="October. 2021 - January. 2022"
               charge="Full Stack Developer"
             />
             <Text fontWeight={300} mb={2}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque perferendis!
+              Criação e manuntenção de sites do LapsiAfro da UFRRJ
             </Text>
             <Link href="google.com" color="green.400">
               GT-Aion 2021 - Covid-19
@@ -108,21 +106,14 @@ function index() {
           <Box mt={16}>
             <Company
               page="index"
-              title="Lorem Ipsum 📖⌨️ 🌍"
-              date="October. 2021 - January. 2022"
-              charge="Full Stack Developer"
+              title="Sphera Educacional 📖⌨️ 🌍"
+              date="March. 2022 - ~~~"
+              charge="Front-end Developer"
             />
             <Text fontWeight={300} mb={2}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque perferendis!
+              Criação (React/Nextjs) e manutenção de sites referentes a educação na Sphera
             </Text>
-            <Link href="google.com" color="green.400">
-              GT-Aion 2021 - Covid-19
-            </Link>
-            <br />
-            <Link href="google.com" color="green.400">
-              GT-Aion 2022
-            </Link>
+           
           </Box>
           <Item title="Personal Projects" />
           <Company

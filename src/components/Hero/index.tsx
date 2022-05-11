@@ -8,6 +8,7 @@ import {
   Image,
   Button,
   useBreakpointValue,
+  Flex,
 } from "@chakra-ui/react";
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
@@ -35,12 +36,11 @@ export default function Hero({ avatarUrl }: HeroProps) {
 
   return (
     <>
-      <Grid
+      <Flex
         mt="24"
         minH={{ base: "100%", sm: "", lg: "80vh", xl: "110vh" }}
-        templateColumns={{ md: "1fr 1fr" }}
         position="relative"
-        overflow="none"
+        justifyContent="space-between"
       >
         <Box>
           <Text fontSize="1.975rem" fontWeight="normal" color="green.400">
@@ -93,25 +93,11 @@ export default function Hero({ avatarUrl }: HeroProps) {
                 left={{ lg: "200px", xl: "300px" }}
               >
                 {boxImg == "xl" ? (
-                  // <motion.div
-                  //   style={{
-                  //     position: "absolute",
-                  //     left: framerLeft,
-                  //     top: framerTop,
-                  //     width: framerScale,
-                  //     opacity: framerOpacity,
-                  //   }}
-                  //   animate="visible"
-                  // >
                   <Image
                     src="/img/interfaces.png"
                     maxW={{ md: "0", lg: "400px", xl: "550px" }}
-                    // style={{
-                    //   width: framerScale,
-                    // }}
                   />
                 ) : (
-                  // </motion.div>
                   <Image
                     maxW={{ md: "0", lg: "400px", xl: "700px" }}
                     src="/img/interfaces.png"
@@ -122,39 +108,23 @@ export default function Hero({ avatarUrl }: HeroProps) {
           </Grid>
         </Box>
 
-        {/* <motion.div
-          style={{
-            cursor: "grab",
-          }}
-          drag
-          dragConstraints={{
-            top: -225,
-            right: 20,
-            bottom: 165,
-            left: -525,
-          }}
-          dragElastic={0.4}
-          dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
-          whileTap={{ cursor: "grabbing" }}
-        > */}
         <Box
-          h={{ base: "0", md: "200px", lg: "300px", xl: "450px" }}
-          w={{ base: "0", md: "200px", lg: "300px", xl: "450px" }}
-          borderRadius="50%"
+          h={{ md: "200px", lg: "300px", xl: "450px" }}
+          w={{ md: "200px", lg: "300px", xl: "450px" }}
+          borderRadius="100%"
           border="1px solid #77dd77"
-          position="absolute"
           bottom={{ md: "100px", lg: "auto" }}
           backgroundImage={`url(${avatarUrl})`}
           backgroundRepeat="no-repeat"
           backgroundSize="cover"
-          right={{ md: "70" }}
+          display={{ base: "none", md: "flex" }}
+          flexDirection="column"
+          justifyContent="flex-end"
+          alignItems="center"
         >
           <Button
             as="a"
-            position="absolute"
-            bottom={{ base: "-200px", sm: "-200px", md: "-2" }}
             colorScheme="green"
-            right={{ md: "-5%", lg: "15%", xl: "30%" }}
             href={repoLink}
             target="_blank"
             leftIcon={<AiFillGithub />}
@@ -164,8 +134,7 @@ export default function Hero({ avatarUrl }: HeroProps) {
             Open in Github
           </Button>
         </Box>
-        {/* </motion.div> */}
-      </Grid>
+      </Flex>
       <Embla>
         <EmblaContainer>
           <EmblaSlide size="100%">
@@ -176,7 +145,6 @@ export default function Hero({ avatarUrl }: HeroProps) {
           </EmblaSlide>
         </EmblaContainer>
       </Embla>
-      
     </>
   );
 }

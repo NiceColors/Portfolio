@@ -45,9 +45,9 @@ export default function index() {
               Voluptas ipsa molestias voluptates perspiciatis, sequi iste
               corrupti nihil
             </Text>
-            <Flex>
+            <Flex flexDirection={{base:'column', sm: 'row'}}>
               <Box mr="3vw">
-                <Heading fontSize="clamp(1rem, 5vw, 2rem)" mt={24}>
+                <Heading fontSize="2rem" mt={24}>
                   Front-End
                 </Heading>
                 <Tec nome="HTML5" icon={<SiHtml5 />} />
@@ -60,7 +60,7 @@ export default function index() {
               </Box>
 
               <Box mr="3vw">
-                <Heading fontSize="clamp(1rem, 5vw, 2rem)" mt={24}>
+                <Heading fontSize="2rem" mt={24}>
                   Back-End
                 </Heading>
                 <Tec nome="NodeJS" icon={<DiNodejsSmall />} />
@@ -69,7 +69,7 @@ export default function index() {
                 <Tec nome="MongoDB" icon={<SiMongodb />} />
               </Box>
               <Box mr="3vw">
-                <Heading fontSize="clamp(1rem, 5vw, 2rem)" mt={24}>
+                <Heading fontSize="2rem" mt={24}>
                   Tools
                 </Heading>
                 <Tec nome="Git" icon={<AiFillGithub />} />
